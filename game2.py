@@ -110,8 +110,3 @@ def run_cat_police_game():
 
         clock.tick(30)
 
-
-# 单独调试：python game2.py
-if __name__ == "__main__":
-    res = run_cat_police_game()
-    print("返回值:", res)

@@ -3,7 +3,6 @@ import pygame
 def run_quiz_game():
     """问答小游戏：全部答对返回 True，窗口关闭返回 False"""
     import pygame
-    print("DEBUG: Entering run_quiz_game")
     pygame.init()
     WIDTH, HEIGHT = 800, 600
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
