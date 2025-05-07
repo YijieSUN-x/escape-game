@@ -41,10 +41,10 @@ def show_transition(screen, title, description, duration=3000, image_name=None):
     for i, line in enumerate(description.split("\n")):
         text_surf = font_text.render(line, True, (255, 255, 255))
         screen.blit(text_surf, ((800 - text_surf.get_width()) // 2, 160 + i * 40))
-
-   
+        
     pygame.display.flip()
     pygame.time.delay(duration)
+    
 
 def get_player_name(screen, font, prompt):
     """
@@ -102,7 +102,6 @@ def main():
             "Hack the security system and override the locks\n"
             "to access the underground vault.",
             duration=4000,
-            image_name="vault.png"
         )
         if not run_quiz_game():
             continue
@@ -116,7 +115,6 @@ def main():
             "Armed guards are sweeping the grounds.\n"
             "Evade them and escape the estate.",
             duration=4000,
-            image_name="guards.png"
         )
         if not run_cat_police_game():
             continue
@@ -130,7 +128,6 @@ def main():
             "Police are in hot pursuit on the highway.\n"
             "Outrun them and disappear into the night.",
             duration=4000,
-            image_name="car_chase.png"
         )
         if not run_escape_game():
             continue
